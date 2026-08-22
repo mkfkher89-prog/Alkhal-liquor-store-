@@ -1,0 +1,27 @@
+{
+  "name": "مشروبات الخال",
+  "short_name": "مشروبات الخال",
+  "description": "تطبيق مشروبات الخال لعرض المشروبات والعروض وإرسال الطلبات عبر واتساب.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b5635",
+  "theme_color": "#174b35",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
