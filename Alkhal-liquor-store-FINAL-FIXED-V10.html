@@ -1,0 +1,1828 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#174b35">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Alkhal liquor store">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<title>Alkhal liquor store</title>
+<style>
+:root{--g:#0d5a38;--g2:#0a452b;--green:#0f6b43;--gold:#e0ad27;--gold2:#f2cf58;--bg:#0b5635;--card:#f5f8f2;--line:#d9c77d;--muted:#536359;--red:#b73b32;--shadow:0 4px 16px #062b1b38}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#fafdff 0%,#eef8ff 52%,#f7fcff 100%);color:#17231c;font-family:Tahoma,Arial,system-ui,sans-serif}
+button,input,textarea,select{font:inherit}button{cursor:pointer;border:0}.top{position:sticky;top:0;z-index:30;height:62px;background:var(--g);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 12px;box-shadow:0 3px 14px #0003}.brand{font-size:1.08rem;font-weight:900;display:flex;align-items:center;gap:8px;min-width:0}.brand-logo{width:42px;height:42px;object-fit:cover;border-radius:9px;border:1px solid #ffffff55;flex:none}.hero h1{display:flex;align-items:center;gap:9px}.hero-logo{width:46px;height:46px;object-fit:cover;border-radius:9px;border:1px solid var(--gold);flex:none}.top-actions{display:flex;gap:5px}.top button{background:#ffffff18;color:#fff;border:1px solid #ffffff2c;border-radius:10px;padding:8px 9px}.count{background:var(--gold);padding:1px 6px;border-radius:20px;font-size:.75rem}
+main{max-width:1000px;margin:auto;padding:12px 10px 90px}.hero{background:linear-gradient(145deg,#ffffff 0%,#f1f9ff 100%);border:1px solid #b9dced;color:#173d2d;border-radius:16px;padding:16px;margin-bottom:14px;box-shadow:0 5px 20px #6fa6c21c}.hero h1{margin:0;color:var(--g);font-size:1.45rem}.hero p{margin:5px 0 12px;color:#536a72;font-size:.8rem}.search{height:48px;background:#fff;border:1px solid #9fc8df;border-radius:12px;display:flex;align-items:center;padding:0 10px;gap:7px;box-shadow:0 3px 12px #6fa6c218}.search input{width:100%;border:0;outline:0;background:transparent;color:#173d2d}.search input::placeholder{color:#8299a4}.search-wrap{position:relative}.search-suggestions{position:absolute;top:54px;right:0;left:0;background:#fff;border:1px solid #b9dced;border-radius:12px;box-shadow:0 10px 28px #173d2d22;z-index:55;overflow:hidden;max-height:340px;overflow-y:auto}.search-suggestions.hide{display:none}.suggestion-title{padding:8px 11px;background:#f1f8fc;color:#58717c;font-size:.68rem;font-weight:900;border-bottom:1px solid #e2eef4}.suggestion{width:100%;display:flex;align-items:center;gap:9px;padding:9px 10px;background:#fff;color:#173d2d;text-align:right;border:0;border-bottom:1px solid #edf3f6}.suggestion:last-child{border-bottom:0}.suggestion:hover{background:#f1f9ff}.suggestion-thumb{width:42px;height:42px;border-radius:8px;object-fit:cover;background:#eef6fa;display:grid;place-items:center;flex:none}.suggestion-info{flex:1;min-width:0}.suggestion-info b,.suggestion-info small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.suggestion-info b{font-size:.76rem}.suggestion-info small{font-size:.63rem;color:#70838b;margin-top:2px}.suggestion-price{font-size:.7rem;font-weight:900;color:var(--g);white-space:nowrap}.suggestion-cat{width:100%;display:flex;align-items:center;gap:9px;padding:10px;background:#0f6b43;color:#fff;text-align:right;border:0;border-bottom:1px solid #0a452b}.suggestion-cat .emoji{font-size:1.25rem}.suggestion-cat b{font-size:.75rem}.suggestion-empty{padding:13px;text-align:center;color:#71848c;font-size:.72rem}
+.section{margin:17px 0}.section h2{font-size:1rem;margin:0 0 8px;color:var(--g)}.cats{display:grid;grid-template-columns:1fr;gap:9px}.cat{background:#0a452b;border:1px solid #d7b63d;border-radius:13px;overflow:hidden;box-shadow:0 4px 12px #0a452b18}.cat>button{width:100%;padding:16px 14px;background:linear-gradient(135deg,#0f6b43,#0a452b);color:#f2cf58;font-weight:900;text-align:right;font-size:.9rem;display:flex;justify-content:space-between;align-items:center}.catbody{border-top:1px solid #d7b63d;padding:10px;background:#eef8f1}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.favorites-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.favorite-card{position:relative}.favorite-btn{position:absolute;top:7px;right:7px;z-index:4;background:#fff;color:#b73b32;border:1px solid #e5c6c2;border-radius:999px;padding:6px 9px;font-size:.68rem;font-weight:900;box-shadow:0 3px 10px #0002}.favorite-btn.is-fav{background:#fff4d8;color:#9b6d00;border-color:#e0ad27}.favorite-btn:hover{transform:scale(1.03)}.size-choice-row{display:grid;grid-template-columns:1fr auto;gap:7px;align-items:center;background:#fff;border:1px solid #d9c77d;border-radius:10px;padding:8px;margin:6px 0}.size-choice-row.selected{border-color:var(--g);background:#eef8f1}.size-choice-main{display:flex;align-items:center;gap:8px}.size-choice-main input{width:19px;height:19px}.modal-qty{display:flex;align-items:center;gap:5px}.modal-qty button{width:32px;height:32px;border-radius:7px;background:#edf2ee;color:var(--g);font-weight:900}.modal-qty input{width:48px;height:32px;text-align:center;border:1px solid #d4ddd5;border-radius:7px}.confirm-text{padding:10px 4px 15px;text-align:center;font-weight:800;line-height:1.6}.confirm-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.favorites-section{background:linear-gradient(145deg,#fffdf4,#f7fbff);border:1px solid #e0ad27;border-radius:14px;padding:10px}.favorites-section h2{display:flex;align-items:center;justify-content:space-between}.favorite-empty{padding:12px;text-align:center;color:#71848c;font-size:.72rem;background:#fff;border-radius:9px;border:1px dashed #d9c77d}.card{background:var(--card);border:1px solid var(--line);border-radius:11px;overflow:hidden;box-shadow:var(--shadow)}.pic{aspect-ratio:1;background:#edf1ed;position:relative}.pic img{width:100%;height:100%;object-fit:cover;display:block}.placeholder{height:100%;display:grid;place-items:center;font-size:2rem}.sold{position:absolute;right:5px;bottom:5px;background:#fff;color:var(--red);padding:4px 6px;border-radius:7px;font-size:.64rem;font-weight:900}.info{padding:8px}.info h3{margin:0 0 2px;font-size:.82rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.price{color:var(--gold);font-size:.8rem;font-weight:900}.note{font-size:.67rem;color:var(--muted);margin:4px 0;line-height:1.35;min-height:18px}.primary,.secondary,.danger,.success{border-radius:8px;padding:9px 10px;font-weight:800}.primary{background:var(--g);color:#fff}.secondary{background:#e7d98f;color:#174b35}.danger{background:#fae8e6;color:var(--red)}.success{background:#e7f2ea;color:#25613d}.wide{width:100%;margin-top:6px}.floating-btn{position:fixed;left:14px;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:1.35rem;z-index:40;box-shadow:0 7px 20px #0003;border:1px solid #ffffff44}
+.install-fab{bottom:15px;background:var(--g);color:var(--gold2)} .favorites-fab{position:fixed;top:74px;left:12px;width:52px;height:52px;border-radius:50%;background:#fff4d8;color:#9b6d00;border:2px solid var(--gold);display:grid;place-items:center;font-size:1.35rem;z-index:65;box-shadow:0 7px 20px #0003}.favorites-fab-count{position:absolute;top:-4px;right:-4px;min-width:21px;height:21px;padding:0 5px;border-radius:20px;background:var(--red);color:#fff;font-size:.65rem;font-weight:900;display:grid;place-items:center;border:2px solid #fff}.favorites-fab-count:empty{display:none}
+
+.floating-actions{position:fixed;left:14px;bottom:15px;z-index:40;display:flex;flex-direction:column;gap:9px;align-items:center}
+.float-btn{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:1.35rem;box-shadow:0 7px 20px #0003;border:0;cursor:pointer}
+.whatsapp-call{background:#25d366;color:#fff}
+.call{background:var(--gold);color:#fff}
+.install-btn{background:var(--g);color:var(--gold2)}
+@media(min-width:700px){.floating-actions{left:22px;bottom:22px}}.offers{display:flex;gap:8px;overflow-x:auto;padding:2px 0 5px;scroll-snap-type:x proximity}.offer{flex:0 0 min(290px,82vw);scroll-snap-align:start;background:#f7e6a5;border:1px solid #ead5a0;border-radius:12px;padding:8px;display:flex;gap:8px;align-items:center}.offer img{width:55px;height:55px;border-radius:8px;object-fit:cover}.offer b{font-size:.78rem}.offer strong{display:block;color:var(--gold);font-size:.78rem}.offer small{color:var(--muted);font-size:.66rem}
+.modal{position:fixed;inset:0;background:#07140d88;z-index:80;display:flex;align-items:flex-end;justify-content:center};.admin-confirm{position:relative;top:auto;z-index:120;margin:0 0 12px;padding:12px;border:3px solid var(--gold);border-radius:14px;background:linear-gradient(145deg,#fffdf4,#f7fbff);box-shadow:0 10px 28px #0004;isolation:isolate}.admin-confirm:before{content:"";position:absolute;inset:0;border-radius:11px;box-shadow:inset 0 0 0 1px #ffffffaa;pointer-events:none}.admin-confirm-head{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:8px;border-bottom:1px solid #d9c77d;color:var(--g);font-weight:900;font-size:1rem}.admin-confirm-close{width:32px;height:32px;border-radius:50%;background:#edf2ee;color:var(--g);font-size:1.25rem}.admin-confirm .confirm-text{font-size:.95rem;padding:14px 6px;min-height:44px;display:grid;place-items:center;color:#173d2d}.admin-confirm .confirm-actions{gap:10px}.admin-confirm .confirm-actions button{min-height:48px;font-size:.95rem;border-radius:10px;border:2px solid transparent;box-shadow:0 4px 10px #0002}.admin-confirm #confirmYes{background:#b73b32;color:#fff;border-color:#8f2b24}.admin-confirm #confirmNo{background:#e7f2ea;color:#174b35;border-color:#9bc5a7}.sheet{width:min(820px,100%);max-height:94vh;overflow:auto;background:#f5f8f2;border:2px solid var(--gold);border-radius:18px 18px 0 0;padding:14px}.sheet.small{max-width:430px}.sheet header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.sheet h2{font-size:1.05rem;margin:0}.close{width:34px;height:34px;border-radius:50%;background:#edf2ee;color:var(--g);font-size:1.35rem}.hide{display:none!important}.field{display:grid;gap:4px;font-size:.76rem;font-weight:800;margin:8px 0}.field input,.field textarea,.field select,.toolbar input,.toolbar select{width:100%;border:1px solid #d4ddd5;border-radius:8px;padding:9px;outline:0}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.full{grid-column:1/-1}.tabs{display:flex;gap:5px;overflow:auto;margin:10px 0}.tab{white-space:nowrap;background:#dcebdc;color:var(--g2);padding:9px;border-radius:8px;font-weight:800}.tab.on{background:var(--g);color:var(--gold2)}.panel{display:none}.panel.on{display:block}.toolbar,.actions{display:flex;gap:6px;align-items:center;margin-bottom:8px}.toolbar input{flex:1}.adminrow{display:flex;align-items:center;gap:7px;padding:7px;background:#fff;border:1px solid var(--line);border-radius:9px;margin:5px 0}.thumb{width:50px;height:50px;flex:none;border-radius:8px;background:#edf1ed;display:grid;place-items:center;overflow:hidden}.thumb img{width:100%;height:100%;object-fit:cover}.cat-thumb{font-size:1.8rem}.grow{flex:1;min-width:0}.grow b,.grow span,.grow small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.grow b{font-size:.78rem}.grow span,.grow small{font-size:.65rem;color:var(--muted)}.rowbuttons{display:flex;gap:4px}.rowbuttons button{padding:7px;font-size:.68rem}.check{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:9px;margin:5px 0;font-size:.78rem;font-weight:800}.check input{width:18px;height:18px}.cartrow{display:grid;grid-template-columns:1fr auto auto;gap:7px;align-items:center;border-bottom:1px solid var(--line);padding:9px 0}.cartrow b{display:block;font-size:.8rem}.cartrow small{font-size:.67rem;color:var(--muted)}.qty{display:flex;align-items:center;gap:4px}.qty button{background:#edf2ee;color:var(--g);border-radius:6px;padding:5px 8px;font-weight:900}.qty .remove{background:#fae8e6;color:var(--red);font-size:.65rem}.total{display:flex;justify-content:space-between;padding:12px 0;font-weight:900}.empty,.loading{padding:18px;text-align:center;color:var(--muted);background:#fafcfa;border-radius:8px;font-size:.78rem}.preview{max-width:170px;max-height:170px;border-radius:9px;margin-top:5px}
+.size-editor{display:grid;gap:7px;background:#f4faf7;border:1px solid #c9dfd2;border-radius:10px;padding:10px}.size-editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.size-editor-head b{font-size:.78rem;color:var(--g)}.size-row{display:grid;grid-template-columns:1.2fr 1fr auto;gap:6px;align-items:center}.size-row input{width:100%;border:1px solid #d4ddd5;border-radius:8px;padding:9px;outline:0;background:#fff}.size-remove{background:#fae8e6;color:var(--red);border-radius:8px;padding:8px 10px;font-weight:900}.add-size{background:#e7f2ea;color:#25613d;border:1px solid #c5dfcc;border-radius:8px;padding:8px 10px;font-weight:900}.size-option{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:13px;background:#fff;border:1px solid #d9c77d;border-radius:10px;margin:6px 0;text-align:right}.size-option:hover{background:#f1f9ff;border-color:#8ebfd8}.size-option b{font-size:.82rem;color:#173d2d}.size-option strong{font-size:.82rem;color:var(--g);white-space:nowrap}.size-modal-product{display:flex;gap:10px;align-items:center;background:#f1f8fc;border-radius:10px;padding:9px;margin-bottom:10px}.size-modal-product img{width:64px;height:64px;object-fit:cover;border-radius:9px;background:#fff}.size-modal-product b{display:block;font-size:.9rem;color:var(--g)}.size-modal-product small{display:block;color:var(--muted);font-size:.68rem;margin-top:4px}.size-summary{font-size:.65rem;color:var(--muted);line-height:1.45;white-space:normal}.size-price-range{color:var(--g);font-weight:900;font-size:.72rem}.size-required{font-size:.67rem;color:var(--muted);font-weight:700}.size-row-label{font-size:.65rem;color:var(--muted);font-weight:800;margin-bottom:2px;display:block}
+.hint{background:#f5f7f3;padding:9px;border-radius:8px;color:var(--muted);font-size:.7rem;line-height:1.5}.toast{position:fixed;right:50%;bottom:78px;transform:translate(50%,20px);opacity:0;background:#17231c;color:#fff;padding:9px 13px;border-radius:9px;z-index:100;font-size:.75rem;transition:.2s}.toast.show{opacity:1;transform:translate(50%,0)}
+@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}.cats{grid-template-columns:1fr}.modal{align-items:center}.sheet{border-radius:18px}.install-fab{left:22px;bottom:22px}}@media(max-width:520px){.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.toolbar{display:grid;grid-template-columns:1fr}.cartrow{grid-template-columns:1fr auto}.cartrow>strong{grid-column:1/-1}.rowbuttons{flex-direction:column}}
+</style>
+<style id="admin-session-style">
+#adminModal:not(.hide){display:flex!important;}
+#adminModal:not(.hide) .sheet{visibility:visible!important;opacity:1!important;}
+</style>
+
+<style id="whatsapp-fix-style">
+#whatsapp{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+</style>
+</head>
+<body>
+<header class="top"><div class="brand"><img class="brand-logo" src="data:image/jpeg;base64,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" alt="Alkhal liquor store logo"><span>Alkhal liquor store</span></div><div class="top-actions"><button id="adminBtn">الإدارة</button><button id="cartBtn">🛒 السلة <span class="count" id="cartCount">0</span></button></div></header>
+<main>
+<section class="hero"><h1><img class="hero-logo" src="data:image/jpeg;base64,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" alt="Alkhal liquor store logo"><span>Alkhal liquor store</span></h1><p>اختر الصنف وأضف منتجاتك إلى السلة.</p><div class="search-wrap"><label class="search">🔎 <input id="search" autocomplete="off" placeholder="ابحث عن مشروب أو صنف..."></label><div id="searchSuggestions" class="search-suggestions hide"></div></div></section>
+<section id="offersSection" class="section hide"><h2>🎁 العروض الخاصة</h2><div id="offers" class="offers"></div></section>
+<button id="favoritesFab" class="favorites-fab" type="button" aria-label="فتح المفضلة" title="المفضلة">❤️<span id="favoritesFabCount" class="favorites-fab-count">0</span></button>
+<section class="section"><h2>أصناف المشروبات</h2><div id="cats" class="cats"></div></section>
+<section id="resultsSection" class="section hide"><h2>نتائج البحث</h2><div id="results"></div></section>
+</main>
+<div class="floating-actions">
+  <a class="float-btn whatsapp-call" href="https://wa.me/962795036244" aria-label="واتساب الخال" title="واتساب الخال">💬</a>
+  <a class="float-btn call" href="tel:0795036244" aria-label="اتصال بخال" title="اتصال بخال">☎</a>
+  <a class="float-btn call" style="background:#4285F4;color:#fff" href="https://maps.app.goo.gl/NazQgXV9yXqKQbW3A" target="_blank" rel="noopener" aria-label="موقع الخال على الخريطة" title="موقع الخال على الخريطة">📍</a>
+  <button id="installBtn" class="float-btn install-btn hide" type="button" aria-label="تثبيت التطبيق" title="تثبيت التطبيق">📲</button>
+</div>
+<div id="toast" class="toast"></div>
+
+<div id="favoritesModal" class="modal hide"><div class="sheet"><header><h2>❤️ المفضلة <span id="favoritesCount" class="count">0</span></h2><button class="close" data-close="favoritesModal">×</button></header><div id="favorites" class="favorites-grid"></div></div></div>
+
+<div id="cartModal" class="modal hide"><div class="sheet"><header><h2>🛒 السلة</h2><button class="close" data-close="cartModal">×</button></header><div id="cartItems"></div><div class="total"><span>المجموع</span><strong id="cartTotal">0.00 د.أ</strong></div><button id="whatsapp" class="primary wide">إرسال الطلب عبر واتساب</button><button id="clearCart" class="danger wide">تفريغ السلة</button></div></div>
+
+<div id="sizeModal" class="modal hide"><div class="sheet small"><header><h2>📦 اختر الحجم والعدد</h2><button class="close" data-close="sizeModal">×</button></header><div id="sizeProductInfo"></div><div id="sizeOptions"></div><button id="sizeAddToCart" type="button" class="primary wide">🛒 إضافة إلى السلة</button></div></div>
+
+<div id="loginModal" class="modal hide"><div class="sheet small"><header><h2>🔐 دخول الإدارة</h2><button class="close" data-close="loginModal">×</button></header><form id="loginForm"><label class="field">كلمة المرور<input id="password" type="password" autocomplete="current-password" required></label><button class="primary wide">دخول</button></form><p class="hint">بيانات المنتجات والأصناف والعروض محفوظة في Firestore وتظهر التعديلات مباشرة. السلة تبقى محفوظة محليًا على جهاز المستخدم.</p></div></div>
+
+<div id="adminModal" class="modal hide"><div class="sheet"><header><h2>⚙️ لوحة الإدارة</h2><button class="close" data-close="adminModal">×</button></header>
+<div id="confirmModal" class="admin-confirm hide" role="dialog" aria-modal="false" aria-live="assertive"><div class="admin-confirm-head"><span>⚠️ تأكيد العملية</span><button class="admin-confirm-close" type="button" data-close="confirmModal" aria-label="إغلاق">×</button></div><div id="confirmText" class="confirm-text"></div><div class="confirm-actions"><button id="confirmNo" type="button" class="secondary">لا</button><button id="confirmYes" type="button" class="danger">نعم، نفّذ</button></div></div>
+<div class="tabs"><button class="tab on" data-tab="manage">📋 المنتجات المنشورة</button><button class="tab" data-tab="categories">🏷️ أصناف المشروبات</button><button class="tab" data-tab="add">➕ إضافة مشروب</button><button class="tab" data-tab="edit">✏️ تعديل مشروب</button><button class="tab" data-tab="stock">🚫 نفاد الكمية</button><button class="tab" data-tab="offersAdmin">🎁 العروض</button></div>
+<section id="manage" class="panel on"><div class="toolbar"><input id="adminSearch" placeholder="بحث في المنتجات"><select id="adminFilter"></select></div><div id="adminProducts"></div></section>
+<section id="categories" class="panel">
+<form id="categoryForm" class="formgrid">
+<label class="field">اسم الصنف<input id="newCategoryName" required placeholder="مثال: مشروبات الطاقة"></label>
+<label class="field">الإيموجي/الستيكر<input id="newCategoryEmoji" value="🥤" maxlength="4" placeholder="🥤"></label>
+<div class="full"><button class="primary">➕ إضافة الصنف</button></div>
+</form>
+<div class="hint">أضف صنفًا مرة واحدة، وبعدها كل المنتجات التي تختاره من الإدارة ستظهر داخله في الواجهة الرئيسية. إضافة منتج جديد لن تنشئ صنفًا مكررًا.</div>
+<div id="categoryList"></div>
+</section>
+<section id="add" class="panel"><form id="productForm" class="formgrid"><input id="editId" type="hidden"><label class="field">الصنف<select id="category"></select></label><label class="field">اسم المشروب<input id="pname" required></label><div class="field full"><div class="size-editor"><div class="size-editor-head"><div><b>📏 الأحجام والأسعار</b><div class="size-required">أضف كل حجم وسعره، ويمكن للزبون اختيار الحجم من الواجهة.</div></div><button type="button" class="add-size" id="addSizeRow">➕ إضافة حجم</button></div><div id="productSizes"></div></div></div><label class="field full">الملاحظة<input id="note"></label><label class="field full">الصورة<input id="pimage" type="file" accept="image/*"></label><img id="preview" class="preview hide full"><div class="full"><button type="submit" class="primary" id="saveProduct">إضافة المنتج</button><button type="button" class="secondary wide" id="viewPublished">تعديل</button><button type="button" class="danger wide" id="cancelEdit">إلغاء التعديل</button></div></form></section>
+<section id="edit" class="panel"><div class="toolbar"><select id="editCategory"></select></div><div id="editProducts"></div></section>
+<section id="stock" class="panel"><div class="actions"><button id="activateStock" class="danger">🚫 تفعيل نفاد الكمية</button><button id="deactivateStock" class="success">✅ إلغاء نفاد الكمية</button></div><div id="stockList"></div></section>
+<section id="offersAdmin" class="panel"><form id="offerForm" class="formgrid"><label class="field">اسم المشروب<input id="offerName" required></label><label class="field">السعر<input id="offerPrice" type="number" min="0" step=".01" required></label><label class="field full">الملاحظة<input id="offerNote"></label><label class="field full">صورة العرض<input id="offerImage" type="file" accept="image/*"></label><img id="offerPreview" class="preview hide full"><button type="submit" class="primary full">إرسال للعرض الخاص</button></form><h3>العروض الحالية</h3><div id="adminOffers"></div></section>
+</div></div>
+<script type="module">
+"use strict";
+
+/* =========================
+   Firebase / Firestore
+========================= */
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
+import {
+  getFirestore,
+  collection,
+  doc,
+  getDocs,
+  setDoc,
+  updateDoc,
+  deleteDoc,
+  onSnapshot,
+  writeBatch
+} from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCPUOFDkN5tOCNekG98WkUvIriKvuCZj6g",
+  authDomain: "alkhal-liquor-store.firebaseapp.com",
+  projectId: "alkhal-liquor-store",
+  storageBucket: "alkhal-liquor-store.firebasestorage.app",
+  messagingSenderId: "673556082612",
+  appId: "1:673556082612:web:e89db206251892fb5ccce1"
+};
+
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getFirestore(firebaseApp);
+
+const PRODUCTS_COLLECTION = "products";
+const CATEGORIES_COLLECTION = "categories";
+const OFFERS_COLLECTION = "offers";
+const MIGRATION_KEY = "mk_firestore_migration_v1";
+
+/* =========================
+   البيانات الأصلية
+========================= */
+const DEFAULT_CATS=[
+  {name:"بيرة",emoji:"🍺"},{name:"فودكا",emoji:"🍸"},{name:"عرق",emoji:"🥃"},
+  {name:"ويسكي",emoji:"🥃"},{name:"شمبانيا",emoji:"🍾"},{name:"جين",emoji:"🍸"},
+  {name:"كونياك",emoji:"🥃"},{name:"العصائر والكسرات",emoji:"🧃"}
+];
+
+const CATS_KEY="mk_categories_v1";
+const PHONE="0795036244", WA="962795036244", PASS="munes1990";
+const PRODUCTS_KEY="mk_products_v1", OFFERS_KEY="mk_offers_v1", CART_KEY="mk_cart_v1", FAVORITES_KEY="mk_favorites_v1";
+
+const $=s=>document.querySelector(s);
+const $$=s=>[...document.querySelectorAll(s)];
+const money=n=>Number(n||0).toFixed(2)+" د.أ";
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({
+  "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+}[c]));
+
+function loadJSON(key,fallback){
+  try{
+    const raw=localStorage.getItem(key);
+    return raw===null?fallback:JSON.parse(raw);
+  }catch(e){
+    console.warn("تعذر قراءة البيانات:",key,e);
+    return fallback;
+  }
+}
+
+/*
+  المنتجات والأصناف والعروض أصبحت من Firestore.
+  السلة فقط تبقى في Local Storage.
+*/
+// البيانات العامة تُحمّل فورًا من التخزين المحلي إن وُجدت، ثم تُحدّث من Firestore.
+// لا يوجد أي اعتماد على دخول الإدارة لعرض المتجر.
+let products=loadJSON(PRODUCTS_KEY,[]);
+let categories=loadJSON(CATS_KEY,DEFAULT_CATS.map(c=>({...c})));
+let offers=loadJSON(OFFERS_KEY,[]);
+if(!Array.isArray(products))products=[];
+if(!Array.isArray(categories)||!categories.length)categories=DEFAULT_CATS.map(c=>({...c}));
+if(!Array.isArray(offers))offers=[];
+let cart=loadJSON(CART_KEY,{});
+let favorites=loadJSON(FAVORITES_KEY,[]);
+if(!Array.isArray(favorites))favorites=[];
+let editImage="";
+let editId="";
+let editOfferId="";
+let editOfferImage="";
+let firestoreReady=false;
+let firestoreError=false;
+let unsubscribeProducts=null;
+let unsubscribeCategories=null;
+let unsubscribeOffers=null;
+
+function persistCart(){
+  try{
+    localStorage.setItem(CART_KEY,JSON.stringify(cart));
+  }catch(e){
+    console.warn("تعذر حفظ السلة:",e);
+  }
+  updateCount();
+}
+
+function removeLegacyDataAfterMigration(){
+  try{
+    // Keep the local public fallback. Firestore remains the primary source.
+    localStorage.setItem(MIGRATION_KEY,"1");
+  }catch(e){
+    console.warn("تعذر تنظيف البيانات القديمة:",e);
+  }
+}
+
+function toast(s){
+  const t=$("#toast");
+  if(!t)return;
+  t.textContent=s;
+  t.classList.add("show");
+  clearTimeout(t._timer);
+  t._timer=setTimeout(()=>t.classList.remove("show"),2200);
+}
+
+
+// PUBLIC STOREFRONT: never require the admin password to view products/categories/offers.
+window.__adminSession = false;
+
+function enforcePublicStorefront(){
+  const login=$("#loginModal");
+  const admin=$("#adminModal");
+  if(login) login.classList.add("hide");
+  // Public rendering must never close an active admin session.
+  if(admin && !window.__adminSession) admin.classList.add("hide");
+}
+
+function modal(id,on=true){
+  const el=$("#"+id);
+  if(!el)return;
+  if(id==="adminModal" && on) window.__adminSession=true;
+  if(id==="adminModal" && !on) window.__adminSession=false;
+  el.classList.toggle("hide",!on);
+}
+
+function makeId(){
+  return Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,9);
+}
+
+function imageData(file){
+  return new Promise((resolve,reject)=>{
+    if(!file)return resolve("");
+    const r=new FileReader();
+    r.onload=()=>{
+      const im=new Image();
+      im.onload=()=>{
+        const max=800;
+        const scale=Math.min(1,max/Math.max(im.width,im.height));
+        const c=document.createElement("canvas");
+        c.width=Math.round(im.width*scale);
+        c.height=Math.round(im.height*scale);
+        c.getContext("2d").drawImage(im,0,0,c.width,c.height);
+        resolve(c.toDataURL("image/jpeg",.78));
+      };
+      im.onerror=reject;
+      im.src=r.result;
+    };
+    r.onerror=reject;
+    r.readAsDataURL(file);
+  });
+}
+
+/* =========================
+   Firestore
+========================= */
+function normalizeDoc(snapshot){
+  return {id:snapshot.id,...snapshot.data()};
+}
+
+function normalizeProductSizes(p){
+  const raw=Array.isArray(p?.sizes)?p.sizes:[];
+  const sizes=raw.map((x,i)=>({
+    id:String(x?.id||("size-"+i+"-"+String(p?.id||""))),
+    name:String(x?.name||"").trim(),
+    price:Number(x?.price)
+  })).filter(x=>x.name && Number.isFinite(x.price) && x.price>=0);
+  if(sizes.length)return sizes;
+  const legacyPrice=Number(p?.price);
+  if(Number.isFinite(legacyPrice) && legacyPrice>=0){
+    return [{id:"legacy",name:"الحجم الأساسي",price:legacyPrice}];
+  }
+  return [];
+}
+
+function productSizes(p){
+  return normalizeProductSizes(p);
+}
+
+function productPriceLabel(p){
+  const sizes=productSizes(p);
+  if(!sizes.length)return "السعر غير محدد";
+  const prices=sizes.map(x=>Number(x.price)).filter(Number.isFinite);
+  const min=Math.min(...prices), max=Math.max(...prices);
+  return min===max?money(min):`من ${money(min)}`;
+}
+
+function productSizeSummary(p){
+  return productSizes(p).map(x=>`${esc(x.name)}: ${money(x.price)}`).join(" · ");
+}
+
+function renderProductSizeEditor(sizes=[]){
+  const box=$("#productSizes");
+  if(!box)return;
+  const list=Array.isArray(sizes)&&sizes.length?sizes:[{id:makeId(),name:"",price:""}];
+  box.innerHTML=list.map((x,i)=>`<div class="size-row" data-size-row>
+    <div><span class="size-row-label">اسم الحجم</span><input class="size-name" value="${esc(x.name||"")}" placeholder="مثال: 330 مل" required></div>
+    <div><span class="size-row-label">السعر بالدينار</span><input class="size-price" type="number" min="0" step=".01" value="${x.price!==undefined&&x.price!==null&&x.price!==""?esc(x.price):""}" placeholder="0.00" required></div>
+    <button type="button" class="size-remove" data-remove-size>حذف</button>
+  </div>`).join("");
+  box.querySelectorAll("[data-remove-size]").forEach(btn=>btn.onclick=()=>{
+    const rows=box.querySelectorAll("[data-size-row]");
+    if(rows.length<=1)return toast("يجب إضافة حجم واحد على الأقل");
+    btn.closest("[data-size-row]").remove();
+  });
+}
+
+function collectProductSizes(){
+  const rows=$$("#productSizes [data-size-row]");
+  const sizes=[];
+  for(const row of rows){
+    const name=String(row.querySelector(".size-name")?.value||"").trim();
+    const price=Number(row.querySelector(".size-price")?.value);
+    if(!name)throw new Error("اكتب اسم كل حجم");
+    if(!Number.isFinite(price)||price<0)throw new Error("أدخل سعرًا صحيحًا لكل حجم");
+    sizes.push({id:makeId(),name,price});
+  }
+  if(!sizes.length)throw new Error("أضف حجمًا واحدًا على الأقل");
+  return sizes;
+}
+
+function openProductSizeModal(id){
+  const p=products.find(x=>String(x.id)===String(id));
+  if(!p)return;
+  if(p.outOfStock)return toast("المنتج غير متوفر");
+  const sizes=productSizes(p);
+  if(!sizes.length)return toast("لا توجد أحجام لهذا المنتج");
+
+  const info=$("#sizeProductInfo");
+  const options=$("#sizeOptions");
+  const addBtn=$("#sizeAddToCart");
+  if(info)info.innerHTML=`<div class="size-modal-product">${p.image?`<img src="${p.image}" alt="">`:`<div style="width:64px;height:64px;display:grid;place-items:center;background:#fff;border-radius:9px;font-size:2rem">🥤</div>`}<div><b>${esc(p.name)}</b><small>${esc(p.category||"")}${p.note?` · ${esc(p.note)}`:""}</small></div></div>`;
+
+  options.innerHTML=sizes.map((size,i)=>`<div class="size-choice-row ${i===0?"selected":""}" data-size-choice="${esc(size.id)}">
+    <label class="size-choice-main">
+      <input type="radio" name="selectedProductSize" value="${esc(size.id)}" ${i===0?"checked":""}>
+      <span><b>${esc(size.name)}</b><small style="display:block;color:var(--muted);font-size:.68rem">${money(size.price)}</small></span>
+    </label>
+    <div class="modal-qty">
+      <button type="button" data-modal-qty="-1">−</button>
+      <input type="number" min="1" value="1" data-modal-qty-value>
+      <button type="button" data-modal-qty="1">+</button>
+    </div>
+  </div>`).join("");
+
+  const selectRow=(row)=>{
+    options.querySelectorAll(".size-choice-row").forEach(x=>x.classList.remove("selected"));
+    row.classList.add("selected");
+    const radio=row.querySelector('input[type="radio"]');
+    if(radio)radio.checked=true;
+  };
+
+  options.querySelectorAll(".size-choice-row").forEach(row=>{
+    row.addEventListener("click",e=>{
+      if(e.target.closest(".modal-qty"))return;
+      selectRow(row);
+    });
+    row.querySelector('input[type="radio"]')?.addEventListener("change",()=>selectRow(row));
+    row.querySelectorAll("[data-modal-qty]").forEach(btn=>{
+      btn.onclick=e=>{
+        e.stopPropagation();
+        selectRow(row);
+        const input=row.querySelector("[data-modal-qty-value]");
+        let qty=Math.max(1,Number(input.value||1)+Number(btn.dataset.modalQty||0));
+        input.value=String(qty);
+      };
+    });
+    row.querySelector("[data-modal-qty-value]")?.addEventListener("change",e=>{
+      e.stopPropagation();
+      selectRow(row);
+      e.target.value=String(Math.max(1,Number(e.target.value||1)));
+    });
+  });
+
+  addBtn.onclick=()=>{
+    const selected=options.querySelector('input[name="selectedProductSize"]:checked');
+    if(!selected)return toast("اختر الحجم");
+    const row=selected.closest(".size-choice-row");
+    const qty=Math.max(1,Number(row.querySelector("[data-modal-qty-value]")?.value||1));
+    for(let i=0;i<qty;i++)addToCart(p.id,selected.value);
+    modal("sizeModal",false);
+  };
+
+  modal("sizeModal",true);
+}
+
+
+async function migrateLegacyData(){
+  if(localStorage.getItem(MIGRATION_KEY)==="1")return;
+
+  const legacyProducts=loadJSON(PRODUCTS_KEY,[]);
+  const legacyCategories=loadJSON(CATS_KEY,null);
+  const legacyOffers=loadJSON(OFFERS_KEY,[]);
+
+  const [pSnap,cSnap,oSnap]=await Promise.all([
+    getDocs(collection(db,PRODUCTS_COLLECTION)),
+    getDocs(collection(db,CATEGORIES_COLLECTION)),
+    getDocs(collection(db,OFFERS_COLLECTION))
+  ]);
+
+  const oldProducts=Array.isArray(legacyProducts)?legacyProducts:[];
+  const oldCategories=Array.isArray(legacyCategories)?legacyCategories:[];
+  const oldOffers=Array.isArray(legacyOffers)?legacyOffers:[];
+
+  const batch=writeBatch(db);
+  let writes=0;
+
+  if(pSnap.empty && oldProducts.length){
+    oldProducts.forEach(p=>{
+      if(!p?.id)return;
+      batch.set(doc(db,PRODUCTS_COLLECTION,String(p.id)),{
+        category:String(p.category||"").trim(),
+        name:String(p.name||"").trim(),
+        price:Number(p.price||0),
+        sizes:normalizeProductSizes(p),
+        note:String(p.note||""),
+        image:String(p.image||""),
+        outOfStock:Boolean(p.outOfStock),
+        createdAt:Number(p.createdAt||Date.now()),
+        updatedAt:Number(p.updatedAt||Date.now())
+      });
+      writes++;
+    });
+  }
+
+  if(cSnap.empty){
+    const source=oldCategories.length?oldCategories:DEFAULT_CATS;
+    source.forEach(c=>{
+      const name=String(c?.name||"").trim();
+      if(!name)return;
+      batch.set(doc(db,CATEGORIES_COLLECTION,categoryDocId(name)),{
+        name,
+        emoji:String(c?.emoji||"🥤").trim()||"🥤",
+        createdAt:Number(c?.createdAt||Date.now()),
+        updatedAt:Number(c?.updatedAt||Date.now())
+      });
+      writes++;
+    });
+  }
+
+  if(oSnap.empty && oldOffers.length){
+    oldOffers.forEach(o=>{
+      if(!o?.id)return;
+      batch.set(doc(db,OFFERS_COLLECTION,String(o.id)),{
+        name:String(o.name||"").trim(),
+        price:Number(o.price||0),
+        note:String(o.note||""),
+        image:String(o.image||""),
+        createdAt:Number(o.createdAt||Date.now()),
+        updatedAt:Number(o.updatedAt||Date.now())
+      });
+      writes++;
+    });
+  }
+
+  if(writes){
+    await batch.commit();
+  }
+
+  removeLegacyDataAfterMigration();
+}
+
+function categoryDocId(name){
+  return encodeURIComponent(String(name).trim()).replace(/\./g,"%2E");
+}
+
+function startPublicFirestoreListeners(){
+  // مستمعو الواجهة العامة يعملون لجميع الزوار ولا يحتاجون جلسة الإدارة.
+  onSnapshot(collection(db,PRODUCTS_COLLECTION), snapshot=>{
+    const remote=snapshot.docs.map(normalizeDoc).map(p=>({...p,sizes:normalizeProductSizes(p)}));
+    const local=loadJSON(PRODUCTS_KEY,[]);
+    const byId=new Map(remote.map(p=>[String(p.id),p]));
+    local.forEach(p=>{ if(p?.id && !byId.has(String(p.id))) byId.set(String(p.id),p); });
+    products=[...byId.values()];
+    renderPublicInterface();
+  }, error=>console.error("Public products listener:",error));
+
+  onSnapshot(collection(db,CATEGORIES_COLLECTION), snapshot=>{
+    const remote=snapshot.docs.map(normalizeDoc).filter(c=>String(c.name||"").trim());
+    const local=loadJSON(CATS_KEY,DEFAULT_CATS.map(c=>({...c})));
+    const byName=new Map(remote.map(c=>[String(c.name).trim(),c]));
+    local.forEach(c=>{ const n=String(c?.name||"").trim(); if(n && !byName.has(n)) byName.set(n,c); });
+    categories=[...byName.values()];
+    ensureAdminCategories();
+    renderPublicInterface();
+  }, error=>console.error("Public categories listener:",error));
+
+  onSnapshot(collection(db,OFFERS_COLLECTION), snapshot=>{
+    const remote=snapshot.docs.map(normalizeDoc);
+    const local=loadJSON(OFFERS_KEY,[]);
+    const byId=new Map(remote.map(o=>[String(o.id),o]));
+    local.forEach(o=>{ if(o?.id && !byId.has(String(o.id))) byId.set(String(o.id),o); });
+    offers=[...byId.values()];
+    renderPublicInterface();
+  }, error=>console.error("Public offers listener:",error));
+}
+
+async function startFirestore(){
+  // الواجهة العامة لا تنتظر تسجيل دخول الإدارة ولا تنتظر ترحيل البيانات.
+  categories=Array.isArray(categories)&&categories.length
+    ?categories
+    :DEFAULT_CATS.map(c=>({...c}));
+  products=Array.isArray(products)?products:[];
+  offers=Array.isArray(offers)?offers:[];
+
+  // إظهار المتجر فورًا حتى لو كان Firestore بطيئًا أو غير متاح مؤقتًا.
+  enforcePublicStorefront();
+  renderPublicInterface();
+
+  try{
+    unsubscribeProducts=onSnapshot(
+      collection(db,PRODUCTS_COLLECTION),
+      snapshot=>{
+        const remoteProducts=snapshot.docs
+          .map(normalizeDoc)
+          .map(p=>({...p,sizes:normalizeProductSizes(p)}));
+        const localProducts=loadJSON(PRODUCTS_KEY,[]);
+        const productMap=new Map(remoteProducts.map(p=>[String(p.id),p]));
+        localProducts.forEach(p=>{ if(p?.id && !productMap.has(String(p.id))) productMap.set(String(p.id),p); });
+        products=[...productMap.values()]
+          .sort((a,b)=>Number(a.createdAt||0)-Number(b.createdAt||0));
+
+        const productCats=[...new Set(
+          products.map(p=>String(p.category||"").trim()).filter(Boolean)
+        )];
+
+        if(!Array.isArray(categories)||!categories.length){
+          categories=DEFAULT_CATS.map(c=>({...c}));
+        }
+        productCats.forEach(name=>{
+          if(!categories.some(c=>String(c.name||"").trim()===name)){
+            categories.push({id:categoryDocId(name),name,emoji:"🥤"});
+          }
+        });
+
+        enforcePublicStorefront();
+        renderPublicInterface();
+        refreshAdminViews();
+      },
+      error=>{
+        console.error("Firestore products listener:",error);
+        enforcePublicStorefront();
+        renderPublicInterface();
+      }
+    );
+
+    unsubscribeCategories=onSnapshot(
+      collection(db,CATEGORIES_COLLECTION),
+      snapshot=>{
+        const firestoreCats=snapshot.docs
+          .map(normalizeDoc)
+          .filter(c=>String(c.name||"").trim())
+          .sort((a,b)=>Number(a.createdAt||0)-Number(b.createdAt||0));
+
+        const localCats=loadJSON(CATS_KEY,DEFAULT_CATS.map(c=>({...c})));
+        const catMap=new Map(firestoreCats.map(c=>[String(c.name).trim(),c]));
+        localCats.forEach(c=>{ const n=String(c?.name||"").trim(); if(n && !catMap.has(n)) catMap.set(n,c); });
+        categories=[...catMap.values()];
+
+        const productCats=[...new Set(
+          products.map(p=>String(p.category||"").trim()).filter(Boolean)
+        )];
+
+        productCats.forEach(name=>{
+          if(!categories.some(c=>String(c.name||"").trim()===name)){
+            categories.push({id:categoryDocId(name),name,emoji:"🥤"});
+          }
+        });
+
+        fillSelects();
+        enforcePublicStorefront();
+        renderPublicInterface();
+        refreshAdminViews();
+      },
+      error=>{
+        console.error("Firestore categories listener:",error);
+        categories=Array.isArray(categories)&&categories.length
+          ?categories
+          :DEFAULT_CATS.map(c=>({...c}));
+        fillSelects();
+        enforcePublicStorefront();
+        renderPublicInterface();
+      }
+    );
+
+    unsubscribeOffers=onSnapshot(
+      collection(db,OFFERS_COLLECTION),
+      snapshot=>{
+        const remoteOffers=snapshot.docs
+          .map(normalizeDoc);
+        const localOffers=loadJSON(OFFERS_KEY,[]);
+        const offerMap=new Map(remoteOffers.map(o=>[String(o.id),o]));
+        localOffers.forEach(o=>{ if(o?.id && !offerMap.has(String(o.id))) offerMap.set(String(o.id),o); });
+        offers=[...offerMap.values()]
+          .sort((a,b)=>Number(b.createdAt||0)-Number(a.createdAt||0));
+        enforcePublicStorefront();
+        renderPublicInterface();
+        refreshAdminViews();
+      },
+      error=>{
+        console.error("Firestore offers listener:",error);
+        enforcePublicStorefront();
+        renderPublicInterface();
+      }
+    );
+
+    // الترحيل يعمل بالخلفية ولا يمنع الواجهة العامة من الظهور.
+    try{
+      await migrateLegacyData();
+    }catch(migrationError){
+      console.error("Firestore migration failed:",migrationError);
+    }
+
+  }catch(error){
+    console.error("Firestore startup error:",error);
+    firestoreError=true;
+    categories=Array.isArray(categories)&&categories.length
+      ?categories
+      :DEFAULT_CATS.map(c=>({...c}));
+    enforcePublicStorefront();
+    renderPublicInterface();
+    fillSelects();
+  }
+}
+
+async function createProduct(data,id=makeId()){
+  const clean={
+    category:String(data.category||"").trim(),
+    name:String(data.name||"").trim(),
+    price:Number(data.price||0),
+    sizes:normalizeProductSizes(data),
+    note:String(data.note||""),
+    image:String(data.image||""),
+    outOfStock:Boolean(data.outOfStock),
+    createdAt:Number(data.createdAt||Date.now()),
+    updatedAt:Number(data.updatedAt||Date.now())
+  };
+  await setDoc(doc(db,PRODUCTS_COLLECTION,String(id)),clean);
+}
+
+async function updateProductFirestore(id,data){
+  await updateDoc(doc(db,PRODUCTS_COLLECTION,String(id)),{
+    ...data,
+    updatedAt:Date.now()
+  });
+}
+
+async function deleteProductFirestore(id){
+  await deleteDoc(doc(db,PRODUCTS_COLLECTION,String(id)));
+}
+
+async function createCategory(name,emoji){
+  const cleanName=String(name||"").trim();
+  const cleanEmoji=String(emoji||"🥤").trim()||"🥤";
+  if(!cleanName)return toast("اكتب اسم الصنف");
+  if(categories.some(c=>String(c.name).trim()===cleanName))return toast("هذا الصنف موجود بالفعل");
+
+  const item={id:categoryDocId(cleanName),name:cleanName,emoji:cleanEmoji,createdAt:Date.now(),updatedAt:Date.now()};
+  try{
+    await setDoc(doc(db,CATEGORIES_COLLECTION,item.id),item);
+  }catch(e){
+    console.warn("Firestore category write unavailable; saving locally:",e);
+  }
+  categories=[...categories,item];
+  try{localStorage.setItem(CATS_KEY,JSON.stringify(categories));}catch(_){}
+  fillSelects();
+  renderPublicInterface();
+  refreshAdminViews();
+  toast("تمت إضافة الصنف "+cleanName);
+}
+
+async function deleteCategory(name){
+  const clean=String(name||"").trim();
+  const count=products.filter(p=>String(p.category||"").trim()===clean).length;
+  if(count)return toast("لا يمكن حذف صنف بداخله منتجات");
+  if(categories.length<=1)return toast("يجب أن يبقى صنف واحد على الأقل");
+
+  const c=categories.find(x=>String(x.name).trim()===clean);
+  if(!c)return;
+
+  const ok=await askConfirm(`هل تريد حذف الصنف «${clean}»؟`);
+  if(!ok)return;
+
+  categories=categories.filter(x=>String(x.name).trim()!==clean);
+  try{localStorage.setItem(CATS_KEY,JSON.stringify(categories));}catch(_){}
+
+  try{
+    await deleteDoc(doc(db,CATEGORIES_COLLECTION,String(c.id)));
+    toast("تم حذف الصنف");
+  }catch(e){
+    console.warn("Firestore category delete unavailable; category removed locally:",e);
+    toast("تم حذف الصنف محليًا");
+  }
+
+  fillSelects();
+  renderPublicInterface();
+  refreshAdminViews();
+}
+
+async function createOffer(data,id=makeId()){
+  const item={
+    id:String(id),
+    name:String(data.name||"").trim(),
+    price:Number(data.price||0),
+    note:String(data.note||""),
+    image:String(data.image||""),
+    createdAt:Number(data.createdAt||Date.now()),
+    updatedAt:Number(data.updatedAt||Date.now())
+  };
+
+  offers=[item,...offers.filter(o=>String(o.id)!==String(item.id))];
+  try{localStorage.setItem(OFFERS_KEY,JSON.stringify(offers));}catch(_){ }
+  renderOffers();
+
+  try{
+    await setDoc(doc(db,OFFERS_COLLECTION,String(id)),{
+      name:item.name,price:item.price,note:item.note,image:item.image,
+      createdAt:item.createdAt,updatedAt:item.updatedAt
+    });
+    return true;
+  }catch(e){
+    console.warn("Firestore offer write unavailable; offer retained locally:",e);
+    return false;
+  }
+}
+
+async function updateOfferFirestore(id,data){
+  await updateDoc(doc(db,OFFERS_COLLECTION,String(id)),{
+    ...data,
+    updatedAt:Date.now()
+  });
+}
+
+async function deleteOfferFirestore(id){
+  await deleteDoc(doc(db,OFFERS_COLLECTION,String(id)));
+}
+
+function refreshAdminViews(){
+  if(!$("#adminModal") || $("#adminModal").classList.contains("hide"))return;
+  fillSelects();
+  adminRows();
+  renderStock();
+  renderEditProducts();
+  renderCategoryManager();
+  renderAdminOffers();
+}
+
+/* =========================
+   الواجهة
+========================= */
+function persistFavorites(){
+  try{
+    localStorage.setItem(FAVORITES_KEY,JSON.stringify(favorites));
+  }catch(e){
+    console.warn("تعذر حفظ المفضلات:",e);
+  }
+}
+
+function isFavorite(id){
+  return favorites.includes(String(id));
+}
+
+function toggleFavorite(id){
+  const key=String(id);
+  const p=products.find(x=>String(x.id)===key);
+  if(!p)return;
+
+  if(isFavorite(key)){
+    favorites=favorites.filter(x=>String(x)!==key);
+    toast(`تمت إزالة ${p.name} من المفضلات`);
+  }else{
+    favorites=[...favorites,key];
+    toast(`تمت إضافة ${p.name} إلى المفضلات`);
+  }
+
+  persistFavorites();
+
+  // لا نعيد بناء الأصناف هنا حتى لا تُغلق القائمة التي فتحها الزبون.
+  // نحدّث أزرار المفضلة فقط داخل الواجهة الحالية.
+  document.querySelectorAll("[data-favorite]").forEach(btn=>{
+    const same=String(btn.dataset.favorite)===key;
+    if(!same)return;
+    const active=isFavorite(key);
+    btn.classList.toggle("is-fav",active);
+    btn.textContent=active?"❤️":"♡";
+    btn.setAttribute("aria-label",active?"إزالة من المفضلة":"إضافة إلى المفضلة");
+    btn.title=active?"إزالة من المفضلة":"إضافة إلى المفضلة";
+  });
+  renderFavorites();
+}
+
+function renderFavorites(){
+  const box=$("#favorites");
+  const count=$("#favoritesCount");
+  const fabCount=$("#favoritesFabCount");
+  if(!box)return;
+
+  const validIds=favorites.map(String).filter(id=>products.some(p=>String(p.id)===id));
+  if(validIds.length!==favorites.length){
+    favorites=validIds;
+    persistFavorites();
+  }
+
+  const favProducts=validIds.map(id=>products.find(p=>String(p.id)===id)).filter(Boolean);
+  if(count)count.textContent=String(favProducts.length);
+  if(fabCount)fabCount.textContent=favProducts.length?String(favProducts.length):"";
+
+  box.innerHTML=favProducts.length
+    ?favProducts.map(p=>productCard(p,true)).join("")
+    :'<div class="favorite-empty">لم تضف أي منتج إلى المفضلة بعد.</div>';
+
+  bindAdds(box);
+}
+
+function productCard(p,inFavorites=false){
+  const sizes=productSizes(p);
+  const label=productPriceLabel(p);
+  const fav=isFavorite(p.id);
+  const favoriteControl=`<button type="button" class="favorite-btn ${fav?"is-fav":""}" data-favorite="${esc(p.id)}" aria-label="${fav?"إزالة من المفضلة":"إضافة إلى المفضلة"}" title="${fav?"إزالة من المفضلة":"إضافة إلى المفضلة"}">${fav?"❤️":"♡"}</button>`;
+  return `<article class="card ${inFavorites?"favorite-card":""}">
+    <div class="pic">
+      ${p.image?`<img src="${p.image}" loading="lazy" decoding="async" alt="${esc(p.name)}">`:`<div class="placeholder">🥤</div>`}
+      ${favoriteControl}
+      ${p.outOfStock?'<b class="sold">🚫 نفدت الكمية</b>':""}
+    </div>
+    <div class="info">
+      <h3>${esc(p.name)}</h3>
+      <strong class="price">${label}</strong>
+      <p class="note">${esc(p.note||"")}</p>
+      <button type="button" class="primary wide add" data-id="${esc(p.id)}" ${p.outOfStock?"disabled":""}>${sizes.length>1?"اختر الحجم":"اختر الحجم والسعر"}</button>
+    </div>
+  </article>`;
+}
+
+function offerCard(o){
+  const offerId=esc(o.id);
+  return `<div class="offer">
+    ${o.image?`<img src="${o.image}" loading="lazy" alt="">`:`<div style="font-size:2rem">🎁</div>`}
+    <div style="flex:1;min-width:0">
+      <b>🎁 عرض خاص — ${esc(o.name)}</b>
+      <strong>${money(o.price)}</strong>
+      <small>${esc(o.note||"")}</small>
+      <button type="button" class="primary wide offer-add" data-id="${offerId}">أضف للسلة</button>
+    </div>
+  </div>`;
+}
+
+function initCats(){
+  const cats=$("#cats");
+  if(!cats)return;
+
+  const source=Array.isArray(categories)&&categories.length
+    ?categories
+    :DEFAULT_CATS.map(c=>({...c}));
+
+  cats.innerHTML=source.map(c=>`<article class="cat" data-category="${esc(String(c.name||"").trim())}">
+    <button type="button" aria-expanded="false"><span>${esc(c.emoji||"🥤")} ${esc(String(c.name||"").trim())}</span><span>⌄</span></button>
+    <div class="catbody hide"><div class="loading">جاري تحميل المنتجات...</div></div>
+  </article>`).join("");
+
+  cats.querySelectorAll(".cat>button").forEach(btn=>{
+    btn.onclick=()=>{
+      const article=btn.closest(".cat");
+      const body=article.querySelector(".catbody");
+      const category=String(article.dataset.category||"").trim();
+      body.classList.toggle("hide");
+      btn.querySelector("span:last-child").textContent=body.classList.contains("hide")?"⌄":"⌃";
+      if(!body.classList.contains("hide")) renderCat(category,body);
+    };
+  });
+
+  // Customer storefront: categories are CLOSED by default.
+  // Products are rendered only after the customer opens that category.
+}
+
+function renderCat(c,body){
+  const category=String(c||"").trim();
+  const a=products.filter(p=>String(p.category||"").trim()===category);
+  body.innerHTML=a.length
+    ?`<div class="grid">${a.map(productCard).join("")}</div>`
+    :'<div class="empty">لا توجد منتجات في هذا الصنف.</div>';
+  bindAdds(body);
+}
+
+function bindAdds(root=document){
+  root.querySelectorAll("[data-favorite]").forEach(b=>{
+    b.onclick=e=>{
+      e.stopPropagation();
+      toggleFavorite(b.dataset.favorite);
+    };
+  });
+  root.querySelectorAll(".add").forEach(b=>{
+    b.onclick=()=>openProductSizeModal(b.dataset.id);
+  });
+  root.querySelectorAll(".card").forEach(card=>{
+    card.onclick=e=>{
+      if(e.target.closest("button"))return;
+      const b=card.querySelector(".add");
+      if(b && !b.disabled)openProductSizeModal(b.dataset.id);
+    };
+  });
+}
+
+function addToCart(id,sizeId){
+  const p=products.find(x=>x.id===id);
+  if(!p||p.outOfStock)return toast("المنتج غير متوفر");
+  const size=productSizes(p).find(x=>x.id===sizeId) || productSizes(p)[0];
+  if(!size)return toast("الحجم غير موجود");
+
+  const cartId=`product-${p.id}-size-${size.id}`;
+  const displayName=`${p.name} — ${size.name}`;
+
+  if(cart[cartId]){
+    cart[cartId].qty++;
+  }else{
+    cart[cartId]={
+      id:cartId,
+      productId:p.id,
+      sizeId:size.id,
+      name:displayName,
+      productName:p.name,
+      sizeName:size.name,
+      price:Number(size.price),
+      qty:1
+    };
+  }
+
+  persistCart();
+  renderCart();
+  toast(`تمت إضافة ${p.name} — ${size.name} إلى السلة`);
+}
+
+function addOfferToCart(id){
+  const o=offers.find(x=>x.id===id);
+  if(!o)return toast("العرض غير موجود");
+
+  const cartId="offer-"+o.id;
+
+  if(cart[cartId]){
+    cart[cartId].qty++;
+  }else{
+    cart[cartId]={
+      id:cartId,
+      name:o.name+" (عرض)",
+      price:Number(o.price),
+      qty:1
+    };
+  }
+
+  persistCart();
+  renderCart();
+  toast("تمت إضافة العرض إلى السلة");
+}
+
+function updateCount(){
+  const count=$("#cartCount");
+  if(count){
+    count.textContent=Object.values(cart).reduce((n,x)=>n+Number(x.qty||0),0);
+  }
+}
+
+function renderCart(){
+  const a=Object.values(cart);
+  const box=$("#cartItems");
+  if(!box)return;
+
+  box.innerHTML=a.length
+    ?a.map(x=>`<div class="cartrow">
+      <div>
+        <b>${esc(x.name)}</b>
+        <small>${x.sizeName?`الحجم: ${esc(x.sizeName)} · `:""}${money(x.price)}</small>
+      </div>
+      <div class="qty">
+        <button data-q="${esc(x.id)}" data-d="-1">−</button>
+        <b>${x.qty}</b>
+        <button data-q="${esc(x.id)}" data-d="1">+</button>
+        <button class="remove" data-r="${esc(x.id)}">حذف</button>
+      </div>
+      <strong>${money(x.price*x.qty)}</strong>
+    </div>`).join("")
+    :'<div class="empty">السلة فارغة.</div>';
+
+  const total=a.reduce((n,x)=>n+Number(x.price)*Number(x.qty),0);
+  $("#cartTotal").textContent=money(total);
+
+  box.querySelectorAll("[data-q]").forEach(b=>{
+    b.onclick=()=>{
+      const id=b.dataset.q;
+      if(!cart[id])return;
+      cart[id].qty+=Number(b.dataset.d);
+      if(cart[id].qty<1)delete cart[id];
+      persistCart();
+      renderCart();
+    };
+  });
+
+  box.querySelectorAll("[data-r]").forEach(b=>{
+    b.onclick=()=>{
+      delete cart[b.dataset.r];
+      persistCart();
+      renderCart();
+    };
+  });
+}
+
+function bindOfferAdds(root=document){
+  if(!root)return;
+  root.querySelectorAll(".offer-add").forEach(button=>{
+    button.onclick=e=>{
+      e.preventDefault();
+      e.stopPropagation();
+      addOfferToCart(button.dataset.id);
+    };
+  });
+}
+
+function renderOffers(){
+  const has=offers.length;
+  $("#offersSection").classList.toggle("hide",!has);
+  $("#offers").innerHTML=offers.map(offerCard).join("");
+  bindOfferAdds($("#offers"));
+}
+
+function adminRows(){
+  const q=$("#adminSearch").value.trim().toLocaleLowerCase("ar");
+  const f=$("#adminFilter").value;
+
+  const a=products.filter(p=>
+    (!f||p.category===f) &&
+    (!q||`${p.name} ${p.note||""}`.toLocaleLowerCase("ar").includes(q))
+  );
+
+  $("#adminProducts").innerHTML=a.length
+    ?a.map(p=>`<div class="adminrow">
+      <div class="thumb">${p.image?`<img src="${p.image}" loading="lazy">`:"🥤"}</div>
+      <div class="grow">
+        <b>${esc(p.name)}</b>
+        <span>${esc(p.category)} · ${productPriceLabel(p)}</span><small class="size-summary">${productSizeSummary(p)}</small>
+        <small>${p.outOfStock?"🚫 نفدت الكمية":"متوفر"}</small>
+      </div>
+      <div class="rowbuttons">
+        <button class="secondary edit" data-id="${esc(p.id)}">تعديل</button>
+        <button class="danger delete" data-id="${esc(p.id)}">حذف</button>
+      </div>
+    </div>`).join("")
+    :'<div class="empty">لا توجد منتجات.</div>';
+
+  bindAdmin();
+}
+
+function bindAdmin(){
+  $$(".edit").forEach(b=>b.onclick=()=>editProduct(b.dataset.id));
+  $$(".delete").forEach(b=>b.onclick=()=>deleteProduct(b.dataset.id));
+}
+
+function fillSelects(){
+  ensureAdminCategories();
+  const opts=categories.map(c=>`<option value="${esc(c.name)}">${esc(c.emoji||"🥤")} ${esc(c.name)}</option>`).join("");
+  const categorySelect=$("#category");
+  const adminFilter=$("#adminFilter");
+  const editCategory=$("#editCategory");
+  if(categorySelect){
+    const current=categorySelect.value;
+    categorySelect.innerHTML=opts;
+    if(current && categories.some(c=>String(c.name).trim()===current))categorySelect.value=current;
+  }
+  if(adminFilter)adminFilter.innerHTML='<option value="">كل الأصناف</option>'+opts;
+  if(editCategory)editCategory.innerHTML='<option value="">كل الأصناف</option>'+opts;
+}
+
+function editProduct(id){
+  const p=products.find(x=>x.id===id);
+  if(!p)return;
+
+  editId=id;
+  editImage=p.image||"";
+
+  $("#category").value=p.category;
+  $("#pname").value=p.name;
+  renderProductSizeEditor(productSizes(p));
+  $("#note").value=p.note||"";
+
+  $("#saveProduct").textContent="حفظ التعديلات";
+
+  if(p.image){
+    $("#preview").src=p.image;
+    $("#preview").classList.remove("hide");
+  }else{
+    $("#preview").classList.add("hide");
+  }
+
+  showTab("add");
+  toast("عدّل البيانات ثم اضغط حفظ التعديلات");
+}
+
+function resetForm(){
+  $("#productForm").reset();
+  editId="";
+  editImage="";
+  $("#saveProduct").textContent="إضافة المنتج";
+  $("#preview").classList.add("hide");
+  renderProductSizeEditor([]);
+}
+
+let confirmResolver=null;
+function askConfirm(message){
+  return new Promise(resolve=>{
+    confirmResolver=resolve;
+    const text=$("#confirmText");
+    if(text)text.textContent=message;
+    // Keep the admin panel open. The confirmation card is rendered
+    // inside the admin sheet with visual priority, not as a full-screen overlay.
+    const admin=$("#adminModal");
+    if(admin)admin.classList.remove("hide");
+    // Show the confirmation INSIDE the admin panel, at its top.
+    // Do not create a full-screen overlay or cover the admin interface.
+    const adminSheet=admin?.querySelector(".sheet");
+    if(adminSheet)adminSheet.scrollTop=0;
+    modal("confirmModal",true);
+    requestAnimationFrame(()=>adminSheet?.scrollTo({top:0,behavior:"smooth"}));
+  });
+}
+function finishConfirm(result){
+  const resolve=confirmResolver;
+  confirmResolver=null;
+  modal("confirmModal",false);
+  if(resolve)resolve(result);
+}
+$("#confirmYes").onclick=()=>finishConfirm(true);
+$("#confirmNo").onclick=()=>finishConfirm(false);
+
+async function deleteProduct(id){
+  const p=products.find(x=>String(x.id)===String(id));
+  if(!p)return;
+  const ok=await askConfirm(`هل تريد حذف المنتج «${p.name}» نهائيًا؟`);
+  if(!ok)return;
+
+  products=products.filter(x=>String(x.id)!==String(id));
+  favorites=favorites.filter(x=>String(x)!==String(id));
+  Object.keys(cart).forEach(key=>{
+    if(cart[key]?.productId===id || key===id)delete cart[key];
+  });
+  persistFavorites();
+  persistCart();
+  try{localStorage.setItem(PRODUCTS_KEY,JSON.stringify(products));}catch(_){}
+
+  try{
+    await deleteProductFirestore(id);
+    toast("تم حذف المنتج");
+  }catch(e){
+    console.warn("Firestore delete unavailable; product removed locally:",e);
+    toast("تم حذف المنتج محليًا");
+  }
+  renderPublicInterface();
+  refreshAdminViews();
+}
+
+function renderStock(){
+  $("#stockList").innerHTML=products.length
+    ?products.map(p=>`<label class="check">
+      <input type="checkbox" value="${esc(p.id)}">
+      ${esc(p.name)} — ${p.outOfStock?"🚫 نفدت":"متوفر"}
+    </label>`).join("")
+    :'<div class="empty">لا توجد منتجات.</div>';
+}
+
+async function changeStock(flag){
+  const ids=$$("#stockList input:checked").map(x=>x.value);
+  if(!ids.length)return toast("حدد منتجًا واحدًا على الأقل");
+
+  try{
+    await Promise.all(ids.map(id=>updateProductFirestore(id,{outOfStock:flag})));
+    toast(flag?"تم تفعيل نفاد الكمية":"تم إلغاء نفاد الكمية");
+  }catch(e){
+    console.error(e);
+    toast("تعذر تحديث حالة الكمية");
+  }
+}
+
+function renderAdminOffers(){
+  $("#adminOffers").innerHTML=offers.length
+    ?offers.map(o=>`<div class="adminrow">
+      <div class="thumb">${o.image?`<img src="${o.image}" loading="lazy">`:"🎁"}</div>
+      <div class="grow">
+        <b>${esc(o.name)}</b>
+        <span>${money(o.price)}</span>
+        <small>${esc(o.note||"")}</small>
+      </div>
+      <div class="rowbuttons">
+        <button class="secondary offer-edit" data-id="${esc(o.id)}">تعديل</button>
+        <button class="danger odelete" data-id="${esc(o.id)}">حذف</button>
+      </div>
+    </div>`).join("")
+    :'<div class="empty">لا توجد عروض.</div>';
+
+  $$(".offer-edit").forEach(b=>{
+    b.onclick=()=>editOffer(b.dataset.id);
+  });
+
+  $$(".odelete").forEach(b=>{
+    b.onclick=async()=>{
+      const o=offers.find(x=>String(x.id)===String(b.dataset.id));
+      if(!o)return;
+      const ok=await askConfirm(`هل تريد حذف العرض «${o.name}»؟`);
+      if(!ok)return;
+
+      offers=offers.filter(x=>String(x.id)!==String(b.dataset.id));
+      delete cart["offer-"+b.dataset.id];
+      try{localStorage.setItem(OFFERS_KEY,JSON.stringify(offers));}catch(_){}
+      persistCart();
+
+      try{
+        await deleteOfferFirestore(b.dataset.id);
+        toast("تم حذف العرض");
+      }catch(e){
+        console.warn("Firestore offer delete unavailable; offer removed locally:",e);
+        toast("تم حذف العرض محليًا");
+      }
+      renderPublicInterface();
+      renderAdminOffers();
+    };
+  });
+}
+
+function editOffer(id){
+  const o=offers.find(x=>x.id===id);
+  if(!o)return;
+
+  editOfferId=id;
+  editOfferImage=o.image||"";
+  $("#offerName").value=o.name||"";
+  $("#offerPrice").value=o.price;
+  $("#offerNote").value=o.note||"";
+
+  const file=$("#offerImage");
+  if(file)file.value="";
+
+  const oldPreview=$("#offerPreview");
+  if(oldPreview){
+    if(o.image){
+      oldPreview.src=o.image;
+      oldPreview.classList.remove("hide");
+    }else{
+      oldPreview.classList.add("hide");
+    }
+  }
+
+  const submit=$("#offerForm button[type='submit']");
+  if(submit)submit.textContent="حفظ تعديل العرض";
+  toast("عدّل بيانات العرض ثم احفظ");
+}
+
+function resetOfferForm(){
+  $("#offerForm").reset();
+  editOfferId="";
+  editOfferImage="";
+  const submit=$("#offerForm button[type='submit']");
+  if(submit)submit.textContent="إرسال للعرض الخاص";
+  const oldPreview=$("#offerPreview");
+  if(oldPreview)oldPreview.classList.add("hide");
+}
+
+function renderEditProducts(){
+  const f=$("#editCategory").value;
+  const a=products.filter(p=>!f||p.category===f);
+
+  $("#editProducts").innerHTML=a.length
+    ?a.map(p=>`<div class="adminrow">
+      <div class="thumb">${p.image?`<img src="${p.image}" loading="lazy">`:"🥤"}</div>
+      <div class="grow">
+        <b>${esc(p.name)}</b>
+        <span>${esc(p.category)} · ${productPriceLabel(p)}</span><small class="size-summary">${productSizeSummary(p)}</small>
+        <small>${p.outOfStock?"🚫 نفدت الكمية":"متوفر"}</small>
+      </div>
+      <button class="primary edit2" data-id="${esc(p.id)}">✏️ تعديل</button>
+    </div>`).join("")
+    :'<div class="empty">لا توجد منتجات منشورة في هذا الصنف.</div>';
+
+  $$(".edit2").forEach(b=>b.onclick=()=>editProduct(b.dataset.id));
+}
+
+function showTab(id){
+  $$(".tab").forEach(x=>x.classList.toggle("on",x.dataset.tab===id));
+  $$(".panel").forEach(x=>x.classList.toggle("on",x.id===id));
+
+  /* عند فتح إضافة مشروب نعيد تعبئة قائمة الأصناف فورًا.
+     هذا يمنع ظهور القائمة فارغة إذا فتح المدير اللوحة قبل وصول onSnapshot. */
+  if(id==="add"){
+    ensureAdminCategories();
+    fillSelects();
+  }
+  if(id==="manage")adminRows();
+  if(id==="categories")renderCategoryManager();
+  if(id==="edit")renderEditProducts();
+  if(id==="stock")renderStock();
+  if(id==="offersAdmin")renderAdminOffers();
+}
+
+function renderCategoryManager(){
+  const box=$("#categoryList");
+  if(!box)return;
+  ensureAdminCategories();
+  const list=Array.isArray(categories)?categories:[];
+  box.innerHTML=list.length
+    ?list.map(c=>{
+      const name=String(c.name||"").trim();
+      const count=products.filter(p=>String(p.category||"").trim()===name).length;
+      return `<div class="adminrow">
+        <div class="thumb cat-thumb">${esc(c.emoji||"🥤")}</div>
+        <div class="grow"><b>${esc(name)}</b><small>${count} منتج</small></div>
+        <button type="button" class="danger category-delete" data-category="${esc(name)}">حذف</button>
+      </div>`;
+    }).join("")
+    :'<div class="empty">لا توجد أصناف.</div>';
+
+  box.querySelectorAll(".category-delete").forEach(btn=>{
+    btn.onclick=()=>deleteCategory(btn.dataset.category);
+  });
+}
+
+function ensureAdminCategories(){
+  if(Array.isArray(categories) && categories.length)return;
+
+  const fromProducts=[...new Set(
+    products.map(p=>String(p.category||"").trim()).filter(Boolean)
+  )].map(name=>({id:categoryDocId(name),name,emoji:"🥤"}));
+
+  const merged=DEFAULT_CATS.map(c=>({...c}));
+  fromProducts.forEach(c=>{
+    if(!merged.some(x=>String(x.name).trim()===c.name))merged.push(c);
+  });
+  categories=merged;
+}
+
+function normalizeSearchText(value){
+  return String(value||"").trim().toLocaleLowerCase("ar");
+}
+
+function hideSearchSuggestions(){
+  const box=$("#searchSuggestions");
+  if(box)box.classList.add("hide");
+}
+
+function renderSearchSuggestions(query){
+  const box=$("#searchSuggestions");
+  if(!box)return;
+
+  const q=normalizeSearchText(query);
+  if(!q){
+    box.innerHTML="";
+    box.classList.add("hide");
+    return;
+  }
+
+  const matchingCategories=categories.filter(c=>
+    normalizeSearchText(c.name).includes(q)
+  ).slice(0,6);
+
+  const matchingProducts=products.filter(p=>
+    `${p.name||""} ${p.category||""} ${p.note||""}`
+      .toLocaleLowerCase("ar")
+      .includes(q)
+  ).slice(0,10);
+
+  if(!matchingCategories.length && !matchingProducts.length){
+    box.innerHTML='<div class="suggestion-empty">لا توجد منتجات أو أصناف مطابقة.</div>';
+    box.classList.remove("hide");
+    return;
+  }
+
+  let html="";
+
+  if(matchingCategories.length){
+    html+='<div class="suggestion-title">الأصناف</div>';
+    html+=matchingCategories.map(c=>`<button type="button" class="suggestion-cat" data-suggest-category="${esc(c.name)}">
+      <span class="emoji">${esc(c.emoji||"🥤")}</span><b>${esc(c.name)}</b>
+    </button>`).join("");
+  }
+
+  if(matchingProducts.length){
+    html+='<div class="suggestion-title">المنتجات</div>';
+    html+=matchingProducts.map(p=>`<button type="button" class="suggestion" data-suggest-product="${esc(p.id)}">
+      ${p.image?`<img class="suggestion-thumb" src="${p.image}" loading="lazy" alt="">`:`<span class="suggestion-thumb">🥤</span>`}
+      <span class="suggestion-info"><b>${esc(p.name)}</b><small>${esc(p.category||"")}${p.outOfStock?" · 🚫 نفدت الكمية":""}</small></span>
+      <span class="suggestion-price">${esc(productPriceLabel(p))}</span>
+    </button>`).join("");
+  }
+
+  box.innerHTML=html;
+  box.classList.remove("hide");
+
+  box.querySelectorAll("[data-suggest-product]").forEach(btn=>{
+    btn.onclick=()=>{
+      const p=products.find(x=>x.id===btn.dataset.suggestProduct);
+      if(!p)return;
+      $("#search").value=p.name;
+      renderAll();
+      hideSearchSuggestions();
+      setTimeout(()=>$("#resultsSection")?.scrollIntoView({behavior:"smooth",block:"start"}),30);
+    };
+  });
+
+  box.querySelectorAll("[data-suggest-category]").forEach(btn=>{
+    btn.onclick=()=>{
+      const category=String(btn.dataset.suggestCategory||"");
+      const article=[...$("#cats").querySelectorAll(".cat")].find(x=>x.dataset.category===category);
+      $("#search").value=category;
+      renderAll();
+      hideSearchSuggestions();
+      const target=[...$("#cats").querySelectorAll(".cat")].find(x=>x.dataset.category===category);
+      if(target){
+        const body=target.querySelector(".catbody");
+        $("#cats").querySelectorAll(".catbody").forEach(x=>x.classList.add("hide"));
+        body.classList.remove("hide");
+        renderCat(category,body);
+        setTimeout(()=>target.scrollIntoView({behavior:"smooth",block:"center"}),30);
+      }
+    };
+  });
+}
+
+function renderPublicInterface(){
+  // الواجهة الرئيسية عامة بالكامل؛ لا تعتمد على تسجيل دخول الإدارة.
+  try{ renderOffers(); }catch(e){ console.error("Public offers render:",e); }
+  try{ initCats(); }catch(e){ console.error("Public categories render:",e); }
+  try{ renderFavorites(); }catch(e){ console.error("Public favorites render:",e); }
+  try{
+    const q=normalizeSearchText($("#search")?.value||"");
+    if(q.length>=1){
+      $("#resultsSection")?.classList.remove("hide");
+      const a=products.filter(p=>`${p.name||""} ${p.category||""} ${p.note||""}`.toLocaleLowerCase("ar").includes(q));
+      $("#results") && ($("#results").innerHTML=a.length?`<div class="grid">${a.map(productCard).join("")}</div>`:'<div class="empty">لا توجد نتائج.</div>');
+      if($("#results")) bindAdds($("#results"));
+    }else{
+      $("#resultsSection")?.classList.add("hide");
+      if($("#results")) $("#results").innerHTML="";
+    }
+    renderSearchSuggestions(q);
+  }catch(e){ console.error("Public search render:",e); }
+}
+
+function renderAll(){
+  try{ renderOffers(); }catch(e){ console.error("renderOffers:",e); }
+  try{ initCats(); }catch(e){ console.error("initCats:",e); }
+  try{ renderFavorites(); }catch(e){ console.error("renderFavorites:",e); }
+
+  const q=normalizeSearchText($("#search").value);
+
+  if(q.length>=1){
+    $("#resultsSection").classList.remove("hide");
+    const a=products.filter(p=>
+      `${p.name||""} ${p.category||""} ${p.note||""}`
+        .toLocaleLowerCase("ar")
+        .includes(q)
+    );
+
+    $("#results").innerHTML=a.length
+      ?`<div class="grid">${a.map(productCard).join("")}</div>`
+      :'<div class="empty">لا توجد نتائج.</div>';
+
+    bindAdds($("#results"));
+  }else{
+    $("#resultsSection").classList.add("hide");
+    $("#results").innerHTML="";
+  }
+
+  renderSearchSuggestions(q);
+}
+
+/* =========================
+   التثبيت
+========================= */
+let deferredInstallPrompt=null;
+const installBtn=$("#installBtn");
+
+// الواجهة العامة لا تعتمد على تسجيل دخول الإدارة؛ بياناتها تأتي مباشرة من Firestore.
+
+function isStandaloneApp(){
+  return window.matchMedia("(display-mode: standalone)").matches ||
+         window.matchMedia("(display-mode: fullscreen)").matches ||
+         window.matchMedia("(display-mode: minimal-ui)").matches ||
+         window.navigator.standalone===true ||
+         document.referrer.startsWith("android-app://");
+}
+
+function updateInstallButton(){
+  if(!installBtn)return;
+
+  const installed=
+    isStandaloneApp() ||
+    localStorage.getItem("mk_app_installed")==="1";
+
+  installBtn.classList.toggle("hide",installed);
+}
+
+function showInstallHelp(){
+  if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+    toast("على الآيفون: اضغط مشاركة في Safari ثم إضافة إلى الشاشة الرئيسية");
+    return;
+  }
+
+  if(/Android/i.test(navigator.userAgent)){
+    toast("إذا لم تظهر نافذة التثبيت، افتح التطبيق من Chrome ثم اختر ⋮ ثم تثبيت التطبيق");
+    return;
+  }
+
+  toast("التثبيت يحتاج متصفحًا يدعم PWA مثل Chrome أو Edge، وفتح التطبيق عبر HTTPS");
+}
+
+window.addEventListener("beforeinstallprompt",event=>{
+  event.preventDefault();
+  deferredInstallPrompt=event;
+  updateInstallButton();
+});
+
+window.addEventListener("appinstalled",()=>{
+  deferredInstallPrompt=null;
+  localStorage.setItem("mk_app_installed","1");
+  updateInstallButton();
+  toast("تم تثبيت التطبيق بنجاح");
+});
+
+if(installBtn){
+  installBtn.onclick=async()=>{
+    if(isStandaloneApp()){
+      updateInstallButton();
+      return;
+    }
+
+    if(deferredInstallPrompt){
+      try{
+        deferredInstallPrompt.prompt();
+        const result=await deferredInstallPrompt.userChoice;
+        deferredInstallPrompt=null;
+
+        if(result && result.outcome==="accepted"){
+          localStorage.setItem("mk_app_installed","1");
+          updateInstallButton();
+        }
+      }catch(error){
+        console.warn("تعذر فتح نافذة التثبيت:",error);
+        deferredInstallPrompt=null;
+        showInstallHelp();
+      }
+      return;
+    }
+
+    showInstallHelp();
+  };
+}
+
+/* =========================
+   الأحداث
+========================= */
+$("#adminBtn").onclick=()=>{
+  modal("loginModal");
+  try{ fillSelects(); }catch(e){ console.warn("تعذر تحديث قوائم الإدارة:",e); }
+};
+
+$("#loginForm").onsubmit=e=>{
+  e.preventDefault();
+
+  if($("#password").value===PASS){
+    $("#password").value="";
+    modal("loginModal",false);
+    window.__adminSession=true;
+    modal("adminModal");
+    ensureAdminCategories();
+    fillSelects();
+    renderAll();
+    adminRows();
+    renderStock();
+    renderEditProducts();
+    renderCategoryManager();
+    renderAdminOffers();
+  }else{
+    toast("كلمة المرور غير صحيحة");
+  }
+};
+
+$("#favoritesFab").onclick=()=>{
+  renderFavorites();
+  modal("favoritesModal");
+};
+
+$("#cartBtn").onclick=()=>{
+  renderCart();
+  modal("cartModal");
+};
+
+$("#clearCart").onclick=()=>{
+  cart={};
+  persistCart();
+  renderCart();
+};
+
+$("#whatsapp").onclick=()=>{
+  const a=Object.values(cart);
+  if(!a.length)return toast("السلة فارغة");
+
+  const total=a.reduce((n,x)=>n+Number(x.price)*Number(x.qty),0);
+
+  const lines=a.map(x=>{
+    const name=x.productName||x.name||"منتج";
+    const size=x.sizeName?` — الحجم: ${x.sizeName}`:"";
+    const qty=Number(x.qty)||1;
+    const price=Number(x.price)||0;
+    return `• ${name}${size} × ${qty} — ${money(price*qty)}`;
+  });
+
+  const m=[
+    "طلب جديد من Alkhal liquor store",
+    "",
+    ...lines,
+    "",
+    `المجموع: ${money(total)}`,
+    "",
+    "يرجى تأكيد الطلب والتفاصيل."
+  ].join("\n");
+
+  const phone=String(WA).replace(/\\D/g,"");
+  const url="https://wa.me/"+phone+"?text="+encodeURIComponent(m);
+
+  /*
+    افتح واتساب مباشرة من ضغطة المستخدم.
+    لا نفرغ السلة قبل فتح واتساب حتى لا تضيع محتويات الطلب
+    إذا رفض المتصفح فتح النافذة أو كان واتساب غير متاح.
+  */
+  let opened=false;
+  try{
+    const w=window.open(url,"_blank","noopener,noreferrer");
+    opened=!!w;
+  }catch(e){
+    opened=false;
+  }
+
+  if(!opened){
+    try{
+      location.href=url;
+      opened=true;
+    }catch(e){
+      toast("تعذر فتح واتساب. تأكد من وجود واتساب أو افتح الرابط من المتصفح.");
+      return;
+    }
+  }
+
+  // نفرغ السلة فقط بعد محاولة فتح واتساب.
+  cart={};
+  persistCart();
+  renderCart();
+};
+
+$$("[data-close]").forEach(b=>{
+  b.onclick=()=>modal(b.dataset.close,false);
+});
+
+$$(".modal").forEach(m=>{
+  m.addEventListener("click",e=>{
+    if(e.target===m)m.classList.add("hide");
+  });
+});
+
+$$(".tab").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
+
+$("#adminSearch").oninput=adminRows;
+$("#adminFilter").onchange=adminRows;
+$("#editCategory").onchange=renderEditProducts;
+
+$("#categoryForm").onsubmit=async e=>{
+  e.preventDefault();
+  await createCategory($("#newCategoryName").value,$("#newCategoryEmoji").value);
+  e.target.reset();
+  $("#newCategoryEmoji").value="🥤";
+};
+
+$("#cancelEdit").onclick=resetForm;
+
+$("#viewPublished").onclick=()=>{
+  resetForm();
+  showTab("manage");
+};
+
+$("#productForm").onsubmit=async e=>{
+  e.preventDefault();
+
+  const selectedCategory=String($("#category").value||"").trim();
+  const name=$("#pname").value.trim();
+  if(!selectedCategory)return toast("اختر الصنف");
+  if(!name)return toast("اكتب اسم المشروب");
+
+  let sizes;
+  try{ sizes=collectProductSizes(); }catch(error){ return toast(error.message); }
+
+  try{
+    const file=$("#pimage").files[0];
+    let img=editImage;
+    if(file) img=await imageData(file);
+
+    if(editId){
+      const old=products.find(x=>x.id===editId);
+      if(!old)return toast("المنتج غير موجود");
+      const payload={category:selectedCategory,name,sizes,price:Number(sizes[0].price),note:$("#note").value.trim(),image:img,outOfStock:Boolean(old.outOfStock),updatedAt:Date.now()};
+      products=products.map(x=>x.id===editId?{...x,...payload}:x);
+      try{localStorage.setItem(PRODUCTS_KEY,JSON.stringify(products));}catch(_){}
+      try{await updateProductFirestore(editId,payload);}catch(err){console.warn("Firestore update unavailable:",err);}
+      toast("تم تعديل المنتج");
+    }else{
+      const id=makeId();
+      const payload={id,category:selectedCategory,name,sizes,price:Number(sizes[0].price),note:$("#note").value.trim(),image:img,outOfStock:false,createdAt:Date.now(),updatedAt:Date.now()};
+      products=[...products,payload];
+      try{localStorage.setItem(PRODUCTS_KEY,JSON.stringify(products));}catch(_){}
+      try{await createProduct(payload,id);}catch(err){console.warn("Firestore create unavailable; local product retained:",err);}
+      toast("تمت إضافة المنتج بنجاح");
+    }
+    renderPublicInterface();
+    refreshAdminViews();
+    resetForm();
+  }catch(error){
+    console.error(error);
+    toast("تعذر إضافة المنتج: "+(error?.message||"خطأ غير معروف"));
+  }
+};
+
+$("#addSizeRow").onclick=()=>{
+  const rows=$$("#productSizes [data-size-row]").map(row=>({
+    name:row.querySelector(".size-name")?.value||"",
+    price:row.querySelector(".size-price")?.value||""
+  }));
+  rows.push({name:"",price:""});
+  renderProductSizeEditor(rows);
+};
+
+$("#pimage").onchange=e=>{
+  const f=e.target.files[0];
+  if(!f)return;
+
+  const r=new FileReader();
+  r.onload=()=>{
+    $("#preview").src=r.result;
+    $("#preview").classList.remove("hide");
+  };
+  r.readAsDataURL(f);
+};
+
+$("#activateStock").onclick=()=>changeStock(true);
+$("#deactivateStock").onclick=()=>changeStock(false);
+
+$("#offerForm").onsubmit=async e=>{
+  e.preventDefault();
+
+  const name=$("#offerName").value.trim();
+  const price=Number($("#offerPrice").value);
+
+  if(!name)return toast("اكتب اسم المشروب");
+  if(!Number.isFinite(price)||price<0)return toast("أدخل سعر العرض بشكل صحيح");
+
+  try{
+    const f=$("#offerImage").files[0];
+    const img=f?await imageData(f):editOfferImage;
+
+    const note=$("#offerNote").value.trim();
+    if(editOfferId){
+      const updated={id:editOfferId,name,price,note,image:img,updatedAt:Date.now()};
+      offers=offers.map(o=>String(o.id)===String(editOfferId)?{...o,...updated}:o);
+      try{localStorage.setItem(OFFERS_KEY,JSON.stringify(offers));}catch(_){ }
+      try{await updateOfferFirestore(editOfferId,{name,price,note,image});}catch(err){console.warn("Firestore offer update unavailable; local offer retained:",err);}
+      renderPublicInterface();
+      renderAdminOffers();
+      toast("تم تعديل العرض");
+    }else{
+      const synced=await createOffer({name,price,note,image,createdAt:Date.now()});
+      renderPublicInterface();
+      renderAdminOffers();
+      toast(synced?"تم إنشاء العرض الخاص":"تم نشر العرض محليًا، وسيظهر في الواجهة");
+    }
+
+    resetOfferForm();
+  }catch(error){
+    console.error(error);
+    toast("تعذر الاتصال بـ Firestore، لكن تم حفظ العرض محليًا");
+  }
+};
+
+$("#offerImage").onchange=e=>{
+  const f=e.target.files[0];
+  if(!f)return;
+  const oldPreview=$("#offerPreview");
+  if(!oldPreview)return;
+  const r=new FileReader();
+  r.onload=()=>{
+    oldPreview.src=r.result;
+    oldPreview.classList.remove("hide");
+  };
+  r.readAsDataURL(f);
+};
+
+$("#search").oninput=()=>{ renderAll(); renderSearchSuggestions($("#search").value); };
+$("#search").onfocus=()=>renderSearchSuggestions($("#search").value);
+document.addEventListener("click",e=>{ if(!e.target.closest(".search-wrap"))hideSearchSuggestions(); });
+
+// PUBLIC STOREFRONT: render immediately for every visitor.
+// No admin password or Firebase authentication is required to display
+// the main storefront, categories, products, or offers.
+try {
+  enforcePublicStorefront();
+  renderPublicInterface();
+} catch (e) {
+  console.error("Initial public storefront:", e);
+}
+updateCount();
+
+// تجهيز واجهة الزبون أولًا وبشكل مستقل عن الإدارة.
+categories=Array.isArray(categories)&&categories.length?categories:DEFAULT_CATS.map(c=>({...c}));
+ensureAdminCategories();
+renderOffers();
+initCats();
+updateInstallButton();
+renderProductSizeEditor([]);
+
+/*
+  بدء الاتصال بعد تجهيز الواجهة.
+  Firestore هو المصدر الرئيسي للمنتجات والأصناف والعروض.
+*/
+// PUBLIC INTERFACE: Firestore listeners are started for every visitor.
+// تشغيل الواجهة العامة لكل الزوار قبل/بالتوازي مع تسجيل الإدارة.
+renderPublicInterface();
+startFirestore();
+
+</script>
+</body>
+</html>
